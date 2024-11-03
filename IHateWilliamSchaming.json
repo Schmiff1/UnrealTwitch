@@ -1,0 +1,113 @@
+{
+  "allowHttpBackend": false,
+  "backendCommand": "",
+  "backendFolderName": "src",
+  "certificateExceptions": [],
+  "extensionViews": [
+    {
+      "channelId": "203870886",
+      "configurationAnchor": "component",
+      "displayChannelName": "schkinmilk",
+      "features": {
+        "isChatEnabled": false,
+        "isSubscriptionStatusAvailable": false
+      },
+      "frameSize": {
+        "width": 1280,
+        "height": 720
+      },
+      "id": "1",
+      "isPopout": false,
+      "label": "",
+      "linked": false,
+      "linkedUserId": "",
+      "orientation": "Portrait",
+      "type": "component",
+      "viewerType": "Logged-In Viewer"
+    }
+  ],
+  "frontendCommand": "",
+  "frontendFolderName": "src",
+  "manifest": {
+    "anchor": "",
+    "assetURLs": [],
+    "authorName": "",
+    "canInstall": true,
+    "configUrl": "https://localhost:8080/config.html",
+    "configurationLocation": "",
+    "description": "",
+    "eulaTosUrl": "",
+    "hasChatSupport": true,
+    "iconUrl": "",
+    "iconUrls": {},
+    "id": "85p5ds061euegkxjkwx2z92wbjsoim",
+    "installationCount": -42,
+    "liveConfigUrl": "",
+    "name": "IHateWilliamSchaming",
+    "panelHeight": 0,
+    "privacyPolicyUrl": "",
+    "requestIdentityLink": true,
+    "requiredBroadcasterAbilities": [],
+    "screenshotUrls": [],
+    "sku": "",
+    "state": "Testing",
+    "subscriptionsSupportLevel": "none",
+    "summary": "",
+    "supportEmail": "",
+    "vendorCode": "",
+    "version": "0.0.1",
+    "viewerSummary": "",
+    "viewerUrl": null,
+    "viewerUrls": {
+      "mobile": "https://localhost:8080/mobile.html",
+      "panel": "",
+      "videoOverlay": "",
+      "component": "https://localhost:8080/video_component.html",
+      "config": "https://localhost:8080/config.html",
+      "liveConfig": ""
+    },
+    "views": {
+      "mobile": {
+        "viewer_url": "https://localhost:8080/mobile.html",
+        "viewerUrl": "https://localhost:8080/mobile.html"
+      },
+      "panel": null,
+      "videoOverlay": null,
+      "component": {
+        "viewer_url": "https://localhost:8080/video_component.html",
+        "aspect_width": 0,
+        "aspect_height": 0,
+        "aspect_ratio_x": 300,
+        "aspect_ratio_y": 200,
+        "autoscale": true,
+        "scale_pixels": 1024,
+        "target_height": 4000,
+        "size": 0,
+        "zoom": false,
+        "zoom_pixels": 0,
+        "can_link_external_content": false,
+        "viewerUrl": "https://localhost:8080/video_component.html",
+        "aspectWidth": 0,
+        "aspectHeight": 0,
+        "aspectRatioX": 300,
+        "aspectRatioY": 200,
+        "scalePixels": 1024,
+        "targetHeight": 4000,
+        "zoomPixels": 0,
+        "canLinkExternalContent": false
+      },
+      "config": {
+        "viewer_url": "https://localhost:8080/config.html",
+        "can_link_external_content": false,
+        "viewerUrl": "https://localhost:8080/config.html",
+        "canLinkExternalContent": false
+      },
+      "liveConfig": null
+    },
+    "whitelistedConfigUrls": [],
+    "whitelistedPanelUrls": []
+  },
+  "name": "IHateWilliamSchaming",
+  "version": 3,
+  "usingRandomFrontendHostingPort": true
+}
