@@ -4,7 +4,7 @@ import dotenv from 'dotenv';
 import axios from 'axios';
 import { WebSocketServer } from 'ws';
 
-const twitch = window.Twitch.ext;
+// const twitch = window.Twitch.ext;
 const app = express();
 dotenv.config;
 
