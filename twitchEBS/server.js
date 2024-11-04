@@ -6,7 +6,7 @@ import { WebSocketServer } from 'ws';
 
 // const twitch = window.Twitch.ext;
 const app = express();
-dotenv.config;
+dotenv.config();
 
 // setup websocket for Unreal
 const PORT = process.env.PORT || 8080;
@@ -38,7 +38,7 @@ function connection(ws) {
 }
 
 app.get('/getUserId', async (req, res) => {
-    decoded = null;
+    let decoded = null;
     if (req.headers['authorization']) {
         let [type, auth] = req.headers['authorization'].split(' ');
 
