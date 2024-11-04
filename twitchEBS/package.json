@@ -16,6 +16,7 @@
     "express": "^4.21.1",
     "http": "^0.0.1-security",
     "jsonwebtoken": "^9.0.2",
-    "websocket": "^1.0.35"
+    "websocket": "^1.0.35",
+    "ws": "^8.18.0"
   }
 }
