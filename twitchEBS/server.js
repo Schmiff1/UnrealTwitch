@@ -3,15 +3,18 @@ import jwt from 'jsonwebtoken';
 import dotenv from 'dotenv';
 import axios from 'axios';
 import { WebSocketServer } from 'ws';
+import { createServer } from 'http';
 
-// const twitch = window.Twitch.ext;
-const app = express();
 dotenv.config();
 
 // setup websocket for Unreal
+const app = express();
+const server = createServer(app)
 const PORT = process.env.PORT || 8080;
-const wss = new WebSocketServer({ port:8081 });
+const wss = new WebSocketServer({ server });
 wss.on('connection', connection);
+
+let unrealConnection = null;
 
 // get twitchAccessToken
 // used to get more info on user and call twitch api
@@ -39,6 +42,7 @@ function connection(ws) {
 
 app.get('/getUserId', async (req, res) => {
     let decoded = null;
+    let userId = null;
     if (req.headers['authorization']) {
         let [type, auth] = req.headers['authorization'].split(' ');
 
@@ -120,4 +124,4 @@ function packData(UID, isFollowed, hasDonated, inStream, isSubbed) {
 }
 
 
-app.listen(PORT);
+server.listen(PORT);
