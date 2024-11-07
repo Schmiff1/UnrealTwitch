@@ -30,28 +30,27 @@ async function getAccessToken() {
     return token.data.access_token;
 }
 
-// when Unreal connects, init get function
-// allows ID to be sent when needed by Unreal
+// get Unreal websocket connection
 function connection(ws) {
     unrealConnection = ws
-
+    console.log("piss");
     ws.on('close', () => {
         unrealConnection = null;
     });
 }
 
+// initialize getUserId endpoint
 app.get('/getUserId', async (req, res) => {
-    let decoded = null;
-    let userId = null;
+    console.log('getUserId');
     if (req.headers['authorization']) {
         let [type, auth] = req.headers['authorization'].split(' ');
 
         if (type == 'Bearer') {
-            decoded = jwt.verify(auth, process.env.TWITCH_EXTENSION_SECRET);
-            userID = decoded.user_id;
+            var decoded = jwt.verify(auth, process.env.TWITCH_EXTENSION_SECRET);
+            var userID = decoded.user_id;
         }   
     }
-
+    console.log(decoded);
     if (decoded) {
         if(unrealConnection) { unrealConnection.send(JSON.stringify({ userID })); }
         res.json({ userId });
